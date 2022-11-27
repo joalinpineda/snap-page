@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Intro section with dropdown navigation</title>
+  <!-- Font and Style -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Epilogue:wght@500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./styles.css">
+  <style>
+    .attribution { position:fixed; bottom: 0; font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+<body>
+  <header class="navbar">
+    <img src="./images/logo.svg" alt="logo">
+
+    <span class="toggle" id="hamburger-menu"
+    ></span>
+
+    <section id="menu" class="menu disable">
+      <div class="menu-container">
+        <div id="features">
+          <a class="feature-toggle" href="#">Features</a>
+          <div class="features-items toggle-disable">
+            <a href="#">Todo List</a>
+            <a href="#">Calendar</a>
+            <a href="#">Reminders</a>
+            <a href="#">Planning</a>
+          </div>
+        </div>
+        <div id="company">
+          <a class="company-toggle" href="#">Company</a>
+          <div class="company-items toggle-disable">
+            <a href="#">History</a>
+            <a href="#">Out Team</a>
+            <a href="#">Blog</a>
+          </div>
+        </div>
+        <a href="#">Careers</a>
+        <a href="#">About</a>
+    
+        <div class="acount">
+          <a href="#">Login</a>
+          <a href="#" class="register-button">Register</a>
+        </div>
+      </div>
+    </section>
+
+  </header>
+  <main>
+    <section class="hero">
+      <picture>
+      <source media="(min-width: 799px)" srcset="./images/image-hero-desktop.png" />
+        <img src="./images/image-hero-mobile.png" alt="">
+      </picture>
+    </section>
+    <section class="info">
+      <h2>
+        Make remote work
+      </h2>
+      <p>
+        Get your team in sync, no matter your location. Streamline processes, 
+        create team rituals, and watch productivity soar.
+      </p>
+      <button>
+        Learn more
+      </button>
+      <div class="clients">
+        <img src="./images/client-databiz.svg" alt="">
+        <img src="./images/client-audiophile.svg" alt="">
+        <img src="./images/client-meet.svg" alt="">
+        <img src="./images/client-maker.svg" alt="">
+      </div>
+    </section>
+  </main>
+
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="https://github.com/joalinpineda">@joalinpineda</a>.
+  </div>
+</body>
+<script src="./index.js"></script>
+</html>
